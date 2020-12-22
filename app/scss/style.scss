@@ -54,7 +54,7 @@
   a {
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
+    @include f500;
   }
 }
 
@@ -74,12 +74,12 @@
   text-align: center;
   &-title {
     font-size: 48px;
-    font-weight: 700;
+    @include f700;
     line-height: 72px;
   }
   &-text {
     font-size: 20px;
-    font-weight: 500;
+    @include f500;
     margin-top: 24px;
     margin-bottom: 54px;
     line-height: 30px;
@@ -100,7 +100,7 @@
       border: none;
       box-shadow: 0px 1px 10px 0px rgba(123, 178, 64, 0.75);
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
       // outline: none;
       // &:focus{
       //   border: 1px solid $color-text;
@@ -108,7 +108,7 @@
       &::placeholder {
         letter-spacing: 0.05em;
         color: #90a4ae;
-        font-weight: 500;
+        @include f500;
       }
     }
     button {
@@ -136,7 +136,7 @@
     background-color: #fff;
     font-size: 14px;
 
-    font-weight: 500;
+    @include f500;
     color: $bg;
     cursor: pointer;
     & + button {
@@ -176,7 +176,7 @@
     min-height: 90px;
     align-items: center;
     min-height: 90px;
-    font-weight: 500;
+    @include f500;
     border-bottom: 1px solid #e7ecf2;
   }
   &-name {
@@ -197,7 +197,7 @@
   }
   &-price {
     font-size: 20px;
-    font-weight: 700;
+    @include f700;
     color: $bg;
   }
   &-info {
@@ -213,7 +213,7 @@
     max-width: 245px;
     span {
       font-size: 14px;
-      font-weight: 500;
+      @include f500;
     }
     .avatar {
       width: 30px;
@@ -276,4 +276,78 @@
       }
     }
   }
+}
+
+// start advantages
+.advantages {
+  background-color: $bg;
+  padding: 110px 0;
+}
+
+.advantages__title {
+  font-size: 36px;
+  @include f700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 83px;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  max-width: 318px;
+  text-align: center;
+  padding: 0px 15px;
+
+  &:hover {
+    .advantages__item-images {
+      background-color: $green;
+      transition: all 0.3s;
+    }
+    .advantages__item-title {
+      color: $green;
+      transition: all 0.3s;
+    }
+    .advantages__item-images {
+      fill: #fff;
+    }
+  }
+  &-images {
+    width: 113px;
+    height: 113px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &-title {
+    @include f500;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 35px;
+  }
+  &-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #b0bec5;
+  }
+}
+
+.ico-1 svg {
+  width: 50px;
+}
+
+.ico-2 svg {
+  width: 71px;
+}
+
+.ico-3 svg {
+  width: 60px;
 }

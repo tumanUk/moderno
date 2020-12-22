@@ -51,7 +51,7 @@ body {
 .title {
   color: $bg;
   font-size: 36px;
-  font-weight: 700;
+  @include f700;
   text-align: center;
   margin-bottom: 60px;
 }
