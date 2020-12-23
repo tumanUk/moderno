@@ -351,3 +351,43 @@
 .ico-3 svg {
   width: 60px;
 }
+
+// start author section
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 761px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    max-width: 653px;
+    min-height: 216px;
+    width: 100%;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 36px;
+    margin-right: 48px;
+    min-height: 59px;
+    max-width: 260px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 400;
+    color: $bg;
+    background-color: #ffffff;
+    padding: 24px 43px ;
+  }
+}
