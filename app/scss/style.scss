@@ -388,6 +388,43 @@
     font-weight: 400;
     color: $bg;
     background-color: #ffffff;
-    padding: 24px 43px ;
+    padding: 24px 43px;
+  }
+}
+
+// tutorial start
+.tutorial {
+  padding: 66px 0px 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 36px;
+    @include f700;
+    color: $bg;
+    text-align: center;
+    margin-bottom: 57px;
+  }
+}
+
+.tutorial__item {
+  &-image {
+    min-height: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-title {
+    @include f700;
+    color: $bg;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f8f8f8;
+    padding: 38px 10px;
   }
 }
