@@ -48,6 +48,11 @@ body {
   }
 }
 
+.page-content{
+background-color: $grey;
+}
+
+
 .title {
   color: $bg;
   font-size: 36px;
@@ -56,8 +61,60 @@ body {
   margin-bottom: 60px;
 }
 
-
-.rate-star{
+.rate-star {
   display: inline-block;
   margin-right: 13px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 49px 0 40px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          position: absolute;
+          left: 8px;
+          color: $green;
+        }
+      }
+
+      &:last-child {
+        a, span {
+          color: $bg;
+        }
+      }
+    }
+
+    a {
+      color: #b0bec5;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
 }
