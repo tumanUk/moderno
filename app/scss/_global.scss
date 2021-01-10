@@ -27,6 +27,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: $color-text;
+  overflow-x: hidden;
 }
 
 .container {
@@ -71,8 +72,6 @@ body {
   height: 100%;
 }
 
-
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -116,5 +115,19 @@ body {
       font-size: 15px;
       font-weight: 400;
     }
+  }
+}
+
+
+.angle-right{
+  position: relative;
+  padding-left: 15px;
+  &::before{
+    content: "\f105";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    left: 0;
+    color: $green;
+    font-size: 14px;
   }
 }
