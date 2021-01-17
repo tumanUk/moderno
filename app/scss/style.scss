@@ -1906,7 +1906,7 @@ button.icon-sort {
     position: absolute;
   }
   &::before {
-    font-family: 'icomoon';
+    font-family: "icomoon";
     color: $green;
     font-size: 24px;
     position: absolute;
@@ -2282,12 +2282,12 @@ button.icon-sort {
   }
 }
 
-.personal__box-item-line{
+.personal__box-item-line {
   height: 15px;
   background-color: #b5b5b5;
   border-radius: 3px;
   margin-bottom: 23px;
-  span{
+  span {
     display: block;
     height: 15px;
     border-radius: 3px;
@@ -2295,4 +2295,355 @@ button.icon-sort {
   }
 }
 // end profile page
+
+//start upload page
+.upload__inner {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 110px;
+
+  button {
+    color: #fff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 175px;
+    cursor: pointer;
+  }
+}
+
+.upload__inner-title {
+  @include f500;
+  font-size: 24px;
+  padding: 16px 35px 18px;
+  color: $text-light;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 40px;
+}
+
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+
+.upload-line {
+  margin-bottom: 25px;
+  display: flex;
+
+  label {
+    padding-top: 5px;
+    min-width: 175px;
+    padding-right: 15px;
+    color: #444;
+
+    span {
+      color: $green;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #d7d7d7;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0 18px;
+
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+    padding: 8px 18px;
+  }
+
+  input[type="file"] {
+    outline: none;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    height: auto;
+    padding: 11px 17px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070;
+    text-shadow: none;
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+    &:hover .jq-selectbox__trigger-arrow {
+      border-top-color: $green;
+    }
+  }
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 19px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #444444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition-duration: 0.3s;
+  }
+  .jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 0 0 2px $green;
+  }
+  .jq-selectbox__dropdown {
+    top: 38px;
+    margin: 0;
+    border-radius: 0;
+    min-width: 100px;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 4;
+  }
+  .jq-selectbox li:hover {
+    background: $green;
+  }
+  .jq-selectbox li.selected {
+    background: #b9e783;
+  }
+  .jq-file {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 11px 17px;
+    border: 1px solid #d7d7d7;
+  }
+  .jq-file__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #707070;
+    max-width: 100%;
+    height: 14px;
+    padding: 0;
+    border: none;
+    border-bottom-color: none;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    margin-left: 100px;
+  }
+  .jq-file__browse {
+    display: inline-block;
+    right: auto;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #444444;
+    padding: 5px 15px;
+    border-left: none;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
+
+//end upload page
+
+//start withdrawals page
+.withdrawals {
+  margin-bottom: 145px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__earning {
+    flex: 0 1 48.7%;
+    max-width: 48.7%;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    padding-bottom: 50px;
+  }
+  &__title {
+    padding: 17px 30px 15px;
+    border-bottom: 1px solid #dedede;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  &__form {
+    padding: 27px 40px 0 37px;
+  }
+  &__form-row {
+    margin-bottom: 30px;
+  }
+  &__form-label {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    span {
+      font-weight: 400;
+      font-size: 24px;
+      color: $green;
+    }
+  }
+  &__form-input {
+    display: block;
+    width: 100%;
+    padding: 12px 20px 11px;
+    font-size: 15px;
+    color: $bg;
+    border: 1px solid #dedede;
+    &::-webkit-input-placeholder {
+      font-size: 15px;
+      color: #707070;
+    }
+    &::-moz-placeholder {
+      font-size: 15px;
+      color: #707070;
+    }
+    &:-moz-placeholder {
+      font-size: 15px;
+      color: #707070;
+    }
+    &:-ms-input-placeholder {
+      font-size: 15px;
+      color: #707070;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $green;
+    }
+  }
+  &__form-select {
+  }
+  .jq-selectbox {
+    width: 100%;
+  }
+  .jq-selectbox__select {
+    height: auto;
+    padding: 11px 17px;
+    border: 1px solid #d7d7d7;
+    border-bottom-color: #d7d7d7;
+    border-radius: 0;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070;
+    text-shadow: none;
+  }
+  .jq-selectbox__trigger {
+    border-left: none;
+    &:hover .jq-selectbox__trigger-arrow {
+      border-top-color: $green;
+    }
+  }
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 19px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #444444;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    transition-duration: 0.3s;
+  }
+  .jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 0 0 2px $green;
+  }
+  .jq-selectbox__dropdown {
+    top: 42px;
+    margin: 0;
+    border-radius: 0;
+  }
+  .jq-selectbox li:hover {
+    background: $green;
+  }
+  .jq-selectbox li.selected {
+    background: #b9e783;
+  }
+  &__form-button {
+    margin-top: 8px;
+    background: $green;
+    border: 2px solid $green;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    transition-duration: 0.3s;
+    &:hover,
+    &:focus {
+      background: #ffffff;
+      color: $green;
+    }
+  }
+  &__history {
+    flex: 0 1 48.7%;
+    max-width: 48.7%;
+    border: 1px solid #dedede;
+    background: #ffffff;
+  }
+  &__history-block {
+    padding: 33px 40px 33px 35px;
+  }
+  &__history-item {
+    display: flex;
+    font-weight: 700;
+    font-size: 13px;
+    color: #444444;
+    padding: 11px 20px;
+    &:nth-child(odd) {
+      background: #f9f9f9;
+    }
+  }
+  &__history-item--pending .withdrawals__history-status {
+    color: $bg;
+  }
+  &__history-date {
+    font-weight: 500;
+    width: 135px;
+  }
+  &__history-email {
+    font-weight: 400;
+    width: 175px;
+  }
+  &__history-summ {
+    width: 70px;
+  }
+  &__history-status {
+    color: $green;
+    width: 70px;
+  }
+}
+
+#modal {
+  display: none;
+}
+//end withdrawals page
+
 @import "media";
